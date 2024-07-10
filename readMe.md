@@ -58,11 +58,11 @@ fs.readFile('example.txt', 'utf8', (err, data) => {
 14. **How do you create a module in Node.js? Provide a simple example.**
    To create a module in Node.js, you can use the `module.exports` object. Here is a simple example:
 
-   **math.js:**
-   ```javascript
-   module.exports.add = (a, b) => a + b;
-   module.exports.subtract = (a, b) => a - b;
-    ```
+math.js:
+```javascript
+module.exports.add = (a, b) => a + b;
+module.exports.subtract = (a, b) => a - b;
+```
 ### `require` vs `import` Statements
 
 In Node.js, `require` and `import` are used for importing modules:
