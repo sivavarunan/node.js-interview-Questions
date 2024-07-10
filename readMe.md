@@ -77,7 +77,6 @@ Module Exports Shorthand:
 In Node.js, module.exports is used to export variables, functions, or classes from a module. The shorthand exports can also be used, which references module.exports. For example:
 
 ```javascript
-Copy code
 // Exporting a function using 'exports'
 exports.myFunction = () => {
     // Function logic here
@@ -98,7 +97,6 @@ The path module in Node.js provides utilities for working with file and director
 
 
 ```javascript
-Copy code
 const path = require('path');
 const fullPath = path.join(__dirname, 'folder', 'file.txt');
 ```
@@ -116,7 +114,6 @@ HTTP Server in Node.js
 Creating an HTTP Server:
 
 ```javascript
-Copy code
 const http = require('http');
 
 const server = http.createServer((req, res) => {
