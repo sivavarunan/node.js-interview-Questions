@@ -1,4 +1,4 @@
-# Node.js Basics and HTTP Server Guide
+# Node.js Basics and HTTP Server 
 
 ## Introduction to Node.js
 
@@ -75,3 +75,29 @@ fs.readFile('example.txt', 'utf8', (err, data) => {
   }
   console.log(data);
 });
+
+# Node.js Basics and HTTP Server Guide
+
+## Streams in Node.js
+
+**What are streams in Node.js and how are they useful?**
+Streams are objects that allow you to read or write data piece by piece. They are useful for handling large amounts of data efficiently, such as reading files, network communications, or any data transfer operations.
+
+## Node.js Modules
+
+**What are modules in Node.js and why are they important?**
+Modules are reusable pieces of code that can be included in other files. They help organize code, make it more manageable, and promote reuse.
+
+**How do you create a module in Node.js? Provide a simple example.**
+
+```javascript
+// math.js
+function add(a, b) {
+  return a + b;
+}
+
+module.exports = add;
+
+// main.js
+const add = require('./math');
+console.log(add(2, 3)); // Output: 5
